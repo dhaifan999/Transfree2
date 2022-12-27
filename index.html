@@ -246,7 +246,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="pages-login.html">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -549,23 +549,21 @@
                       <i class="bi bi-arrow-right-circle"></i>
                     </div>
                     <div class="ps-2">
-                      <h6>Transfer</h6>
+                      <a href="pages-transfer.html"><h6>Transfer</h6></a>
                     </div>
-                    <a href="page-top-up.html">
-                      <div class="ps-5"></div>
-                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                        <i class="bi bi-wallet2"></i>
-                      </div>
-                        <div class="ps-2">
-                        <h6>Top Up</h6>
-                      </div>
-                    </a>
                     <div class="ps-5"></div>
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="ri-bill-line"></i>
+                      <i class="bi bi-wallet2"></i>
                     </div>
                     <div class="ps-2">
-                      <h6>Split Bill</h6>
+                      <h6>Payment</h6>
+                    </div>
+                    <div class="ps-5"></div>
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-wallet"></i>
+                    </div>
+                    <div class="ps-2">
+                      <h6>Top Up</h6>
                     </div>
                   </div>
                 </div>
@@ -833,23 +831,20 @@
               <h5 class="card-title">Have Something To Pay?</h5>
               <div class="qr">
                 <h5>Use your QR to pay with Transfree</h5>
-                <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#verticalycentered">QR Code</button>
-                <div class="modal fade" id="verticalycentered" tabindex="-1">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <h1 align-text="center">Scan Here!</h1>
-                        <img src="./assets/img/barcode.png" align-text="center"/>
-                        <h5>Scan This QR -> Check Notification -> Instanly Pay</h5>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
+                <button class="modal-open btn btn-primary w-75" data-modal="modal-qr">QR Code</button>
+                <div class="modal" id="modal-qr">
+                  <div class="modal-content">
+                    <div class="modal-body text-center">
+                      <h1 align-text="center">Scan Here!</h1>
+                      <img src="./assets/img/barcode.png" align-text="center"/>
+                      <h5>Scan This QR -> Check Notification -> Instanly Pay</h5>
                     </div>
+                    <div class="modal-footer"><button class="link modal-close btn btn-primary w-100">Close</button></div>
                   </div>
+                </div>
               </div>
             </div>
-      
+
           </div><!-- End Overview -->
 
         </div><!-- End Right side columns -->

@@ -59,7 +59,8 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Reciever</h5>
+                    <h5 class="card-title text-center pb-0 fs-4">Payment Method</h5>
+                    <h5 class="card-title pb-0 fs-5">Bank Transfer</h5>
                   </div>
 
                   <form class="row g-3 needs-validation" novalidate>
@@ -85,32 +86,28 @@
                       </div>
                     </div>
 
+                    <div class="pt-0 pb-0">
+                      <h5 class="card-title pb-0 fs-5">Virtual Account</h5>
+                    </div>
+
                     <div class="col-12">
-                      <label for="yourNominal" class="form-label">Amount</label>
+                      <label for="yourNoRek" class="form-label">Bank</label>
                       <div class="input-group has-validation">
-                        <span class="input-group-text">Rp</span>
-                        <input type="number" name="username" class="form-control" id="yourNominal" required aria-label="Amount (to the nearest rupiah)">
-                        <span class="input-group-text">.00</span>
-                        <div class="invalid-feedback">Please enter the amount!</div>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Select the Bank</option>
+                          <option value="1">BANK RAKYAT INDONESIA</option>
+                          <option value="2">BANK MANDIRI</option>
+                          <option value="3">BANK NEGARA INDONESIA</option>
+                        </select>
+                        <div class="invalid-feedback">Please enter the bank!</div>
                       </div>
                     </div>
 
-                    <div class="pt-0 pb-0">
-                      <h5 class="card-title text-center pb-0 fs-4">Sender</h5>
-                    </div>
-
                     <div class="col-12">
-                      <label for="yourName" class="form-label">Sender name</label>
-                      <input type="text" name="username" class="form-control" id="yourName" required>
-                      <div class="invalid-feedback">Please enter your name!</div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="yourNoTel" class="form-label">Telephone Number</label>
+                      <label for="yourNoRek" class="form-label">Account Number</label>
                       <div class="input-group has-validation">
-                        <span class="input-group-text">+62</span>
-                        <input type="number" name="username" class="form-control" id="yourNoTel" required>
-                        <div class="invalid-feedback">Please enter your number!</div>
+                        <input type="number" name="username" class="form-control" id="yourNoRek" required>
+                        <div class="invalid-feedback">Please enter the account number!</div>
                       </div>
                     </div>
 
